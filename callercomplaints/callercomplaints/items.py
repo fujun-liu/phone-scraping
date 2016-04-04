@@ -8,7 +8,7 @@
 import scrapy
 
 
-class Notes800Item(scrapy.Item):
+class CallercomplaintsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     phone_id = scrapy.Field()

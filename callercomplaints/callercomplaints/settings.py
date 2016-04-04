@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for notes800 project
+# Scrapy settings for callercomplaints project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,16 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'notes800'
+BOT_NAME = 'callercomplaints'
 
-SPIDER_MODULES = ['notes800.spiders']
-NEWSPIDER_MODULE = 'notes800.spiders'
-DOWNLOAD_HANDLERS = {
-  's3': None,
-}
+SPIDER_MODULES = ['callercomplaints.spiders']
+NEWSPIDER_MODULE = 'callercomplaints.spiders'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'notes800 (+http://www.yourdomain.com)'
+#USER_AGENT = 'callercomplaints (+http://www.yourdomain.com)'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS=32
@@ -46,13 +44,13 @@ DOWNLOAD_HANDLERS = {
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'notes800.middlewares.MyCustomSpiderMiddleware': 543,
+#    'callercomplaints.middlewares.MyCustomSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'notes800.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'callercomplaints.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -64,7 +62,7 @@ DOWNLOAD_HANDLERS = {
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'notes800.pipelines.SomePipeline': 300,
+#    'callercomplaints.pipelines.SomePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
