@@ -10,7 +10,7 @@ class CallerComplaintsSpider(scrapy.Spider):
 	#start_urls = ['http://www.callercomplaints.com/SearchResult.aspx?Phone=888-821-8982']
 	df = pd.read_csv('NpasInSvcByNumRpt.csv')
 	npa = list(df['NPA'])
-	npa = npa[:1]
+	#npa = npa[:1]
 	start_urls = ['http://www.callercomplaints.com/AreaCodeDetail.aspx?AreaCode={}'.format(area_code) for area_code in npa]
 
 	def parse(self, response):
