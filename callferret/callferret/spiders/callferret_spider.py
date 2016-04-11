@@ -4,7 +4,7 @@ import re
 class CallerComplaintsSpider(scrapy.Spider):
 	name = "callferret"
 	allowed_domains = ["callferret.com"]
-	start_urls = ['http://www.callferret.com/area-codes/002-area-code.html']
+	start_urls = ['http://www.callferret.com/area-codes']
 
 	def parse(self, response):
 		filename = response.url.split('/')[-1] + '.html'
